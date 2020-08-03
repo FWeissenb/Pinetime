@@ -7,6 +7,7 @@
 #include "CurrentTimeClient.h"
 #include "DfuService.h"
 #include "CurrentTimeService.h"
+#include "HeartRateService.h"
 #include <host/ble_gap.h>
 
 namespace Pinetime {
@@ -49,6 +50,7 @@ namespace Pinetime {
         AlertNotificationService anService;
         AlertNotificationClient alertNotificationClient;
         CurrentTimeService currentTimeService;
+        HeartRateService heartRateService;
 
         uint8_t addrType; // 1 = Random, 0 = PUBLIC
         uint16_t connectionHandle;

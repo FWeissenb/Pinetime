@@ -356,6 +356,7 @@ list(APPEND SOURCE_FILES
   Components/Ble/DfuService.cpp
   Components/Ble/CurrentTimeService.cpp
   Components/Ble/AlertNotificationService.cpp
+  Components/Ble/HeartRateService.cpp
   drivers/Cst816s.cpp
   FreeRTOS/port.c
   FreeRTOS/port_cmsis_systick.c

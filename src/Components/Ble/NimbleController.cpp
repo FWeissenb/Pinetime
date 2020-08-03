@@ -80,6 +80,7 @@ void NimbleController::Init() {
   deviceInformationService.Init();
   currentTimeClient.Init();
   currentTimeService.Init();
+  heartRateService.Init();
 
   anService.Init();
 
