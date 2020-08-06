@@ -24,7 +24,9 @@ echo ""
 # Application address must sync with hw/bsp/nrf52/bsp.yml
 echo "Flashing Application..."
 #program bin/targets/nrf52_my_sensor/app/apps/my_sensor_app/my_sensor_app.img verify 0x00008000
-program ../build/src/pinetime-graphics.bin 0
+#program /home/frankw/Git/Pinetime/build/image.bin 0x8000
+program ../build/image.bin 0x8000
+#program /home/frankw/Downloads/my_sensor_app.img 0x8000
 echo ""
 
 # Restart the device and start the bootloader.
