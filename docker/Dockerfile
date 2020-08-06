@@ -25,9 +25,10 @@ RUN wget -q https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v15.x.x/nRF5_SDK_
 #imgtool
 RUN git clone https://github.com/JuulLabs-OSS/mcuboot.git && pip3 install -r /mcuboot/scripts/requirements.txt
 COPY build.sh /scripts/build.sh
+RUN chmod +x /scripts/build.sh
 
 #assume /app is source of repo
-CMD chmod +x /scripts/build.sh && /scripts/build.sh
+CMD /scripts/build.sh && /scripts/build.sh
 
 
 #CMD ls /app
